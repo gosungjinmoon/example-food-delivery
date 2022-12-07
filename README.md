@@ -66,10 +66,10 @@ orders로 post 요청을 보내면 OrderPlaced에서 pay에 있는 pay커맨드�
 
 ## 2. CQRS 
 읽기 모델을 분리한다.
+```
 - app -> OrderStateViewHandler.java에서 이벤트에 따라 Real Model 저장, 업데이트, 삭제를 정의한다. 
 ```
-
-- 다만 위와 같은 모델로 구현할 경우 다른 도메인에 있는 이벤트에 따른 뷰를 제공하지 못하므로 단독 컨텍스트에 리얼 모델을 구현하여 보완이 필요함.
+![image](https://user-images.githubusercontent.com/55925545/206180485-7a59af7c-5d2c-4435-94bf-ce676d3f29fe.png)
 
 ## 3. Request / Response
 
