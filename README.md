@@ -75,3 +75,6 @@ orders로 post 요청을 보내면 OrderPlaced에서 pay에 있는 pay커맨드�
 
 ![image](https://user-images.githubusercontent.com/55925545/206180164-76662dda-dbe2-4441-8f10-df382a595659.png)
 
+## 4. Gateway
+![image](https://user-images.githubusercontent.com/55925545/206180772-ee5ffd99-679f-48be-9c77-35278247b1c7.png)
+
