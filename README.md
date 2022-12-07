@@ -30,34 +30,27 @@
 
 
 ## Model
-![image](https://user-images.githubusercontent.com/53729857/205811898-fe557cc1-6bc2-4dbf-867c-1734bb86d370.png)
+![image](https://user-images.githubusercontent.com/55925545/206178264-da04e6e1-c4f6-4a04-8866-5d7eb8c51bbd.png)
 
 
 요구사항을 커버하는지 검증
 
-![image](https://user-images.githubusercontent.com/53729857/205814704-19cd22d1-88d2-4860-bc4c-5ad7ab0b02ee.png)
+![image](https://user-images.githubusercontent.com/55925545/206178494-38a9bd52-c49c-45ff-aa0a-8791c98adca0.png)  
+1. 고객이 메뉴를 선택하여 주문한다. (ok)
+2. (추가) 회원이 아니면 신규 가입을 하고 가입내역을 이메일로 전달 받는다. (ok)
+3. (추가) 결제 수단을 등록시 카드 유효성을 확인한다. (ok)
+4. 주문이 되면 주문 내역이 입점상점주인에게 주문정보가 전달된다. (ok)
+5. 상점주는 주문을 수락하거나 거절할 수 있다. (ok)
+6. 상점주는 요리시작때와 완료 시점에 시스템에 상태를 입력한다. (ok)
     
-    - 고객이 메뉴를 선택하여 주문한다. (ok)
-    - 고객이 선택한 메뉴에 대해 결제한다. (ok)
-    - 주문이 되면 주문 내역이 입점상점주인에게 주문정보가 전달된다 (ok)
-    
-![image](https://user-images.githubusercontent.com/53729857/205815658-a7e27991-af7b-44a4-9c76-d732b456a40a.png)
+![image](https://user-images.githubusercontent.com/55925545/206179237-3a7ccae9-5ffd-4958-a028-0b39f01f7a2e.png)
 
-    - 상점주는 주문을 수락하거나 거절할 수 있다 (ok)
-    - 상점주는 요리시작때와 완료 시점에 시스템에 상태를 입력한다 (ok)
-    - 요리가 완료되면 고객의 지역 인근의 라이더들에 의해 배송건 조회가 가능하다 (ok)
-    - 주문상태가 바뀔 때 마다 카톡으로 알림을 보낸다 (ok)
-    
-![image](https://user-images.githubusercontent.com/53729857/205816589-5c4d93b4-0503-46f9-98bf-d08db232451b.png)
-
-    - 라이더가 해당 요리를 Pick한 후, 앱을 통해 통보한다. (ok)
-    
-![image](https://user-images.githubusercontent.com/53729857/205816875-45de8307-24b5-4cd8-a969-d7189fb85c7a.png) 
-    
-    - 고객은 아직 요리가 시작되지 않은 주문은 취소할 수 있다 (ok)
-    - 고객이 주문상태를 중간중간 조회한다 (ok)
-    - 고객이 요리를 배달 받으면 배송확인 버튼을 탭하여, 모든 거래가 완료된다 (ok)
-  
+7. 고객은 아직 요리가 시작되지 않은 주문은 취소할 수 있다. (ok)
+8. 요리가 완료되면 고객의 지역 인근의 라이더들에 의해 배송건 조회가 가능하다. (ok)
+9. 라이더가 해당 요리를 Pick한 후, 앱을 통해 통보한다. (ok)
+10. 고객이 주문상태를 중간중간 조회한다. (ok)
+11. 주문상태가 바뀔 때 마다 카톡으로 알림을 보낸다. (ok)
+12. 고객이 요리를 배달 받으면 배송확인 버튼을 탭하여, 모든 거래가 완료된다. (ok)
 
 # 체크포인트
 ## 1. Saga(Pub/Sub)
